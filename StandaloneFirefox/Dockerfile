@@ -15,7 +15,7 @@ RUN sudo apt-get update \
  && cd ruby-2.6.3 \
  && ./configure \
  && make \
- && make install \
+ && sudo make install \
  && cd .. \
  && rm -fr ruby-2.6.3*
 
