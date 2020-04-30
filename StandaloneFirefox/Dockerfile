@@ -19,5 +19,8 @@ RUN sudo apt-get update \
  && cd .. \
  && rm -fr ruby-2.6.3*
 
+# Install Git
+RUN sudo apt-get install -y git
+
 # Set working directory
 WORKDIR /opt/bin
