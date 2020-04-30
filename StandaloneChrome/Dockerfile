@@ -19,6 +19,9 @@ RUN sudo apt-get update \
  && cd .. \
  && rm -fr ruby-2.6.3*
 
+# Install gems
+RUN sudo gem install selenium-webdriver ruby-gmail debase debugger-ruby_core_source rake ruby-debug-ide httparty mailgunner rest-client
+
 # Install Git
 RUN sudo apt-get install -y git
 
